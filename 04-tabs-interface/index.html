@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Project</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="project-header">
+    <h1>Simple Tabs Interface</h1>
+    <p class="project-description">
+      This project is a tabbed content interface that allows users to switch between different sections of content without leaving the page.
+    </p>
+  </header>
+
+  <div class="tabs-container">
+    <div class="tabs">
+      <button class="tab active" data-tab="home" onclick="displayHome()">Home</button>
+      <button class="tab" data-tab="about" onclick="displayAbout()">About</button>
+      <button class="tab" data-tab="contact" onclick="displayContact()">Contact</button>
+    </div>
+    <div class="tab-content" id="home">
+      <p>Welcome to the Home tab. This is the home content.</p>
+    </div>
+    <div class="tab-content" id="about">
+      <p>This is the About tab. Learn more about us here.</p>
+    </div>
+    <div class="tab-content" id="contact">
+      <p>This is the Contact tab. Get in touch!</p>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
